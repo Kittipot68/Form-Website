@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .vl {
+  border-left: 6px solid green;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  
+  
+} */
+
+.dodging-button:hover {
+  animation: dodgingAnimation 0.1s infinite alternate;
+}
+
+body {
+  background-color: #efd8f4;
+}
+@keyframes dodgingAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px); /* Increase this value to make the dodge more significant */
+  }
+}
+
+/* Add this CSS in your main CSS file or component */
+.capture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screenshot-container {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+}
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+/* Add this CSS to your component or CSS file */
+/* Add this to your existing CSS styles */
+
+
+/* Default styles for screens wider than 411px */
+/* You can place your default styles here */
+
+/* Media query for screens with a minimum width of 411px */
+
+
+
+
+.custom-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+  border-bottom: 4px solid palevioletred;
+}
+
+.custom-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid #ccc; /* Initial border for input */
+  transition: border-bottom 0.3s ease-in-out; /* Smooth transition for input border */
+}
+
+.custom-input input:focus {
+  border-bottom: 4px solid palevioletred; /* Adjusted border on input focus */
+}
+
+/* Placeholder animation styles (same as before) */
+.custom-input input::placeholder {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.custom-input input:focus::placeholder,
+.custom-input input:not(:placeholder-shown)::placeholder {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.hover-red:hover {
+  border: 1px solid red; /* You can customize the hover effect as per your preference */
+  /* Add any other styles you want to apply when hovering over the card */
+}
+
+.hover-lightslategrey {
+  position: relative;
+  display: inline-flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 12px;
+  margin-left: 110px;
+  width: 5px; /* Set a fixed width for the initial state */
+  height: 5px; /* Set a fixed height for the initial state */
+  border-radius: 50%; /* Make it a circle */
+  border: 1px solid transparent; /* Add a transparent border */
+  transition: background-color 0.565s ease; /* Add a transition for smooth hover effect */
+}
+
+.hover-lightslategrey:hover {
+  background-color: whitesmoke;
+}
+.hover-lightslategrey:hover {
+  background-color: #ECE9E9;
+  width: 25px;
+  height: 25px;
+}
+
+
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
